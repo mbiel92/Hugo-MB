@@ -1,0 +1,30 @@
+{{- $columns := findRE "row-cols-((sm|md|lg|xl)-)?[0-9]" (.Get "class") -}}
+{{- $maxcol := 0 }}
+{{ range $columns }}
+{{ $col := findRE "[0-9]*$" . 1 }}
+{{ range $col }}
+{{ if lt $maxcol . }}{{ $maxcol = . }}{{ end }}
+{{ end }}
+{{ end }}
+<div class="row g-1 pb-1 {{ with .Get "class" }}{{ . }}{{ end }}">
+{{ range $index, $element := split .Inner "<--->" }}
+{{ $inner := $element | markdownify }}
+{{ $image := findRE "<img+.*>" $inner 1 }}
+{{ $image = replaceRE "<img+(.*)>" "<img $1 class=\"w-100\">" ( index $image  0 )  }}
+{{ $body := replaceRE "<img+.*>" "" $inner }}
+<div class="col">
+{{ if gt $maxcol 0 }}
+<div class="card rounded-0 border-0 h-100 {{ if eq (mod $index 2) 0 }}bg-sq-2{{ else }}bg-sq-1{{ end }} p-4" data-aos="zoom-in-up" data-aos-offset="{{ mul 50 (mod $index $maxcol) }}">
+{{ else }}
+<div class="card rounded-0 border-0 h-100 {{ if eq (mod $index 2) 0 }}bg-sq-2{{ else }}bg-sq-1{{ end }} p-4" data-aos="zoom-in-up"></div>
+{{ end }}
+<div class="row g-0 h-100">
+<div class="col-md-4 pe-3">
+{{- printf "%s" $image | htmlUnescape | safeHTML -}}
+</div>
+<div class="col-md-8">{{ $body | htmlUnescape | safeHTML }}</div>
+</div>
+</div>
+</div>
+{{ end }}
+</div>

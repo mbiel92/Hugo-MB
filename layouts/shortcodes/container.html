@@ -1,0 +1,5 @@
+{{ $animation := .Get "animation" }}
+<div class="container{{ with .Get "type" }}{{ if eq "fluid" . }}-fluid{{ end }}{{ end }} {{ .Get "class" }}" {{ if eq $animation "yes" }}data-aos="fade-up"
+data-aos-anchor-placement="top-bottom" {{ end }}>
+    {{ .Inner | markdownify }}
+</div>

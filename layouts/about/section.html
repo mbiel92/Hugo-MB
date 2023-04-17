@@ -1,0 +1,94 @@
+{{ define "main" }} 
+
+<style>
+  .main_card {
+  align-items: center;
+  flex-direction: row;
+  }
+  .conferences img {
+    max-width: 200px;
+    max-height: 125px;
+    }
+
+</style>
+
+<div class="container pt-3 pb-3">
+    <h2 class="section-header">{{.Params.title}}</h2>
+</div>
+
+<div class="container-fluid bg-light border-0">
+    <div class="container-fluid card bg-light border-0 main_card" style="max-height: 500px;">
+        <img style="max-height: 500px; object-fit: cover;" src="/img/about/rsz_seqred_sulwinski_swaczynski.jpg" class="card-img-top">
+        <div class="card-body">
+          <div class="banner-text">
+            <blockquote>              
+                <h1 style="">{{ .Params.specialists }}</h1>             
+            </blockquote>
+        </div>
+          <h5 class="card-title" style="font-weight: bold;">{{ .Params.main_card_title}}</h5>
+          <p class="card-text">{{ .Params.main_card_description}}</p>        
+        </div>
+      </div>
+</div>
+<div class="container pt-3">
+  <h2 class="section-header">{{.Params.position_name}}</h2>
+</div>
+
+
+
+
+<div class="container" style="margin-bottom:80px;">
+  <div class="row">
+    <div class="col-12">
+        <div class="row row-md-cols-2">          
+{{ range .Paginator.Pages }}
+        <div class="col-md-3 col-xs-12 py-3">
+<div class="card h-100 border-0" style="max-height: 320px !important;">
+    <div class="card-wrap" style="height: 500px; overflow: revert;">
+        <a href="{{ .Permalink }}"> <img src="{{ .Params.image }}" class="card-img-top img-fluid" alt="{{ .Title }}" style="object-fit: contain;"> </a>
+            </div>
+    <div class="card-body blog-card--body" style="background-color: white; text-align: center;">
+      <h5 class="card-title" style="color: #ea4335; font-weight: 500;">{{ .Params.name }}</h5>
+      <h5 class="card-title" style="font-size:16px; font-weight: 500;">{{ .Params.position }}</h5>
+        <a href="{{ .Params.linkedin }}"><img src ="/icons/LI-In.jpg"></a>
+      </div>
+  </div>
+</div>
+{{ end }}
+
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container-fluid">
+    <div class="container py-4">
+      <div class="row">
+        <div class="container pt-4 pb-3">
+          <h2 class="section-header">{{ .Params.conferences_title }}</h2>
+      </div>
+      <div class="container"></div>
+      <p>{{ .Params.conferences_description }}</p>
+      </div>
+        <div class="row conferences">
+           
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/InfraSEC_s.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/CC4ES_Konferencja.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/Ibcon_s.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/Projekt_BMS-1.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/PIU-1.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/Magenta_Secure_Industry_4.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/SIWE_logo2.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/Technology-Risk-Management-Forum-2020.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/Seqred_Security_PWNing.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/CS3_loggo_3D_300-1.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/Logo_What_the_Hack.jpg"></div>
+            <div class="col-md-3 text-center"><img class="mx-auto d-block py-4" src="/img/about/KSC_Forum.jpg"></div>            
+           
+        </div>
+    </div>
+</div>
+</div>
+
+
+{{ end }}

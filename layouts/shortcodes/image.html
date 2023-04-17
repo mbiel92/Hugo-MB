@@ -1,0 +1,5 @@
+{{ with .Get 1 }}
+<img src="{{ . }}" class="h-50">
+{{ else }}
+<img src="{{ $.Page.Params.image }}" class="article-image">
+{{ end }}

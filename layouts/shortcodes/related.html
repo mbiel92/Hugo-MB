@@ -1,0 +1,32 @@
+{{ $articles := slice }}
+{{ $maintag := .Get "tag" }}
+{{ $currPermalink := .Page.RelPermalink }}
+{{ range ( .Page.GetTerms "tags") }}
+  {{ $currTag := .LinkTitle }}
+  {{ $taggedPages := (index .Site.Taxonomies.tags (lower $currTag)).Pages }}
+    {{ range $taggedPages }}
+      {{ if not (eq .RelPermalink $currPermalink) }}
+        {{ $articles = $articles | append . }}
+      {{ end }}
+    {{ end }}
+{{ end }}
+
+<h2 class="section-header my-4">READ MORE</h2>
+<p>
+<strong>Related articles:</strong>
+</p>
+<div class="row row-cols-md-3">
+{{ range $index, $element := (first 3 $articles) }}
+<div class="col">
+<div class="card" data-aos="zoom-in-up" data-aos-offset="{{ mul 50 (mod $index 3) }}">
+<div class="card-wrap">
+<img src="{{ $element.Params.image }}" class="card-img-top img-fluid" style="height:200px">
+</div>
+<div class="card-body">
+<h5 class="card-title"><strong>{{ $element.LinkTitle }}</strong></h5>
+<a href="{{ $element.Permalink }}" type="button" class="btn btn-outline-primary mt-2">Read more</a>
+</div>
+</div>
+</div>
+{{ end }}
+</div>

@@ -1,0 +1,19 @@
+<div class="row {{ with .Get "class" }}{{ . }}{{ end }}">
+{{- range $index, $element := split .Inner "<--->" -}}
+{{- $inner := $element | markdownify }}
+{{- $title := findRE "<h[0-9]+(.*)>+(.*)</h[0-9]>" $inner -}}
+{{- $body := replaceRE "<h[0-9]+(.*)>+(.*)</h[0-9]>" "" $inner -}}
+{{- $body = $body | htmlUnescape | safeHTML -}}
+{{- $body = replaceRE "<p>" "<p class=\"card-text text-center pb-4\">" $body | htmlUnescape | safeHTML -}}
+<div class="col">
+<div class="card h-100 rounded-0 shadow" data-aos="zoom-in-up" data-aos-offset="{{ mul $index 100 }}">
+<div class="card-body">
+{{- range $title -}}
+<h1 class="card-title text-primary text-center p-4"><strong>{{ . | plainify }}</strong></h1>
+{{- end -}}
+{{- printf "%s" $body | htmlUnescape | safeHTML -}}
+</div>
+</div>
+</div>
+{{ end }}
+</div> 

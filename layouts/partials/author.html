@@ -1,0 +1,13 @@
+{{ $avatar := replaceRE "[ \t]" "" (lower .Params.author) }}
+{{ $avatar = replaceRE "[ąĄ]" "a" $avatar }}
+{{ $avatar = replaceRE "[ćĆ]" "c" $avatar }}
+{{ $avatar = replaceRE "[ęĘ]" "e" $avatar }}
+{{ $avatar = replaceRE "[łŁ]" "l" $avatar }}
+{{ $avatar = replaceRE "[ńŃ]" "n" $avatar }}
+{{ $avatar = replaceRE "[óÓ]" "o" $avatar }}
+{{ $avatar = replaceRE "[śŚ]" "s" $avatar }}
+{{ $avatar = replaceRE "[żŻźŹ]" "z" $avatar }}
+<div class="col-6">
+    <img class="author-avatar" src="/authors/{{$avatar}}.png">
+    <h4 class="author-name">{{ .Params.author }}</h4>
+</div>

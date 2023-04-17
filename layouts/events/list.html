@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="container pt-3">
+    <h2 class="section-header">{{ .Params.Title }}</h2>
+    </div>
+
+<div class="news-body px-4">
+    {{ $news := .Site.GetPage "/news"}}
+    <div class="container py-3">
+        <div class="row">
+            <div class="col-8">
+                <div class="row row-md-cols-2">   
+                    {{ range where $news.Pages.ByDate.Reverse ".Params.event" "true" }}       
+                <div class="col-md-6 col-xs-12 py-3">
+        <div class="card h-100">
+            <div class="card-wrap">
+               <a href="{{ .Permalink }}"> <img src="{{ .Params.image }}" class="card-img-top img-fluid" alt="{{ .Title }}" style="height: 200px"> </a>
+            </div>
+            <div class="card-body blog-card--body">
+                <h5 class="card-title blog-card--title">{{ .Title }}</h5>
+                <p class="card-text blog-card--date">{{ .Date.Format  "02.01.2006"}}</p>
+                <p class="card-text blog-card--summary">{{ .Summary }}</p>
+                <a href="{{ .Permalink }}" class="btn btn-primary text-white">{{i18n "more"}}</a>
+            </div>
+        </div>
+      </div>
+  {{ end }}
+  
+              </div>
+          </div>
+      </div>
+
+  </div>
+  {{ end }}

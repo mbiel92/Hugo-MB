@@ -1,0 +1,37 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="/js/ses.js"></script> 
+<script> $(window).on('load', function(){
+	$('a.email-address').each(function(){
+		$(this).attr("href", "mailto: "+$(this).data('email')+"@"+$(this).data('address')).attr("title", $(this).data('email')+"@"+$(this).data('address'));
+	})
+})</script>
+{{- partial "tags/favicons" . -}}
+
+<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous">
+  {{ $inServerMode := .Site.IsServer }}
+  {{ $sass         := resources.Get "scss/main.scss" | resources.ExecuteAsTemplate "style.main.scss" . }}
+  {{ $cssTarget    := "css/main.css" }}
+  {{ $cssOpts      := cond ($inServerMode) (dict "targetPath" $cssTarget "enableSourceMap" true) (dict "targetPath" $cssTarget "outputStyle" "compressed") }}
+  {{ if or ($inServerMode) (eq .Site.Params.env "LOCAL") }}
+  {{ $css := $sass | toCSS $cssOpts | resources.PostCSS | minify  | resources.PostProcess }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" media="screen">
+  {{ else }}
+  {{ $css := $sass | toCSS $cssOpts | resources.PostCSS | minify | fingerprint | resources.PostProcess  }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" media="screen">
+  {{ end }}
+  
+  {{- partial "tags/title" . -}}
+  {{- partial "tags/description" . -}}
+  {{- partial "tags/link" . -}}
+  {{- partial "tags/language" . -}}
+  {{- partial "tags/image" . -}}
+  {{- partial "tags/date" . -}}
+  {{- partial "tags/sitemap" . -}}
+  {{- partial "tags/article" . -}}
+  {{- partial "tags/searchengine" . -}}
+  {{- partial "tags/socialmedia" . -}}
+  {{- partial "tags/theme" . -}}

@@ -1,0 +1,31 @@
+{{ define "main" }}
+<style>
+.award_image img{max-height:200px;}
+</style>
+
+<div id="index-banner">
+    <div class="container">     
+        <div class="row">
+          <div class="col col-xl-8 col-lg-6 col-md-12">
+                <div class="banner-text">
+                    <blockquote>
+                     
+                        <h1 style="color: white !important;">{{ .Params.title }}</h1>
+                   
+                    </blockquote>
+                </div>
+            </div>                 
+            <div class="col col-xl-4 col-lg-6 col-md-12">
+               
+                
+               
+              
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+{{ .Content }}
+</div>
+
+{{ end }}

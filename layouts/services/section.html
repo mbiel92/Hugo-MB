@@ -1,0 +1,112 @@
+{{ define "main" }} 
+{{ $active := "active" }} 
+{{ $len := len .Pages }}
+<div class="d-block">
+  <div id="service-gallery" class="carousel slide" data-bs-ride="carousel">
+    {{ if gt $len 1 }}
+    <div class="carousel-indicators">
+      {{- range $index, $element := .Pages.ByDate.Reverse -}}
+      <button
+        type="button"
+        data-bs-target="#service-gallery"
+        data-bs-slide-to="{{- $index -}}"
+        {{ if gt (len $active) 0 }} class="active" aria-current="true" {{ end }}
+        aria-label="slide-{{- $index -}}"
+      ></button>
+      {{ $active = "" }} 
+      {{ end }}
+    </div>
+    {{ end }}
+    <div class="carousel-inner" style="max-height: 500px;">
+      {{ $active = "active" }} 
+      {{ range .Pages.ByDate.Reverse }}
+      <div class="carousel-item {{ $active }}">
+        <img
+          src="{{- .Params.image -}}"
+          class="d-block w-100 carousel-scale"
+          alt="{{- .Params.short -}}"
+        />
+        <div class="carousel-caption">
+          <div class="container pt-4">
+            <div class="row">
+              <div class="col-md-6 col-lg-5">
+                <h1 class="shadow">{{ .Title }}</h1>
+                <p class="pt-2 ps-4 d-lg-none shadow">{{ .Params.short }}</p>
+                <p class="pt-2 ps-4 d-none d-lg-block shadow">
+                  {{ .Params.description }}
+                </p>
+                {{ with .Permalink }}
+                <a
+                  href="{{ . }}"
+                  class="btn btn-primary text-white"
+                  role="button"
+                  >{{ i18n "more" . }}</a>
+                {{ end }}
+              </div>
+              <div class="col-md-6 col-lg-7"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{- $active = "" -}} 
+      {{ end }}
+    </div>
+    {{ if gt $len 1 }}
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#service-gallery"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#service-gallery"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+    {{ end }}
+  </div>
+</div>
+
+<div class="container pt-3">
+  <h2 class="section-header">{{ .Params.Title }}</h2>
+  </div>
+
+<div class="container py-3">
+  <div class="row">
+      <div class="">
+          <div class="row row-md-cols-2">          
+{{ range .Paginator.Pages.ByDate.Reverse }}
+          <div class="col-md-6 col-xs-12 py-3">
+  <div class="card h-100">
+      <div class="card-wrap">
+          <a href="{{ .Permalink }}"> <img src="{{ .Params.image }}" class="card-img-top img-fluid" alt="{{ .Title }}" style="height: 200px"> </a>
+              </div>
+      <div class="card-body blog-card--body">
+          <h5 class="card-title blog-card--title">{{ .Title }}</h5>
+          <p class="card-text blog-card--summary">{{ .Summary }}</p>
+          <a href="{{ .Permalink }}" class="btn btn-primary text-white">{{i18n "more"}}</a>
+      </div>
+    </div>
+  </div>
+{{ end }}
+
+          </div>
+      </div>
+  </div>
+  <div class="container-fluid pt-4">
+  <div class="d-flex justify-content-center">
+  {{ template "_internal/pagination.html" . }}
+  </div>
+  </div>
+</div>
+
+
+
+{{ end }}

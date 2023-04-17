@@ -1,0 +1,43 @@
+{{ define "main" }}
+<style>
+    .blog_image img {max-width: 100%;}
+    h2 {color: #DF4113;}
+</style>
+
+<div class="container-fluid bg-sq-3 py-3">
+    <div class="container text-white">
+        <div class="row align-items-center pb-3">
+            {{- partial "author" . -}}
+            <div class="col-6 text-end">
+            {{ if eq .Lang "en"}}
+            <span class="article-date">{{ .Date.Format "January 2, 2006" }}</span>
+            {{ else }}
+            <span class="article-date">{{.Date.Day}} {{i18n .Date.Month}} {{.Date.Year}}</span>
+            {{ end }}
+            </div>
+        </div>
+        <h1>{{ .Title }}</h1>
+    </div>    
+</div>
+
+<div class="container py-3 col-8">
+    <div class="row">
+        <div class="row py-3">
+    <div class="card-wrap col-8">
+        <img src="{{ .Params.image }}" style="max-height: 500px;" alt="{{ .Title }}">
+    </div>
+    </div>
+    <div class="row blog_image">
+    {{ .Content }}
+    </div>
+</div>
+
+<div class="container py-3 col-md-4">
+
+</div>
+
+</div>
+
+
+
+{{ end }}

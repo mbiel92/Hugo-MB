@@ -1,0 +1,33 @@
+{{ define "main" }} 
+
+<style>
+
+
+  .card {
+  align-items: center;
+  flex-direction: row;
+}
+.card-title {
+  font-weight: bold;
+}
+.card img {
+
+}
+</style>
+
+<div class="container pt-3">
+    <h2 class="section-header">{{.Params.title}}</h2>
+</div>
+
+<div class="container-fluid bg-light border-0">
+    <div class="container card bg-light border-0" style="">
+        <img src="/img/about/rsz_seqred_sulwinski_swaczynski.jpg" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">{{ .Params.main_card_title}}</h5>
+          <p class="card-text">{{ .Params.main_card_description}}</p>        
+        </div>
+      </div>
+</div>
+
+
+{{ end }}

@@ -1,0 +1,17 @@
+{{ define "main"}}
+
+<div class="container py-3 col-8" style ="min-height: 800px;">
+<div class="row">
+<div class="card container py-3 col-8 border-0 mb-3" style="flex-direction: row !important;">
+    <img class="card-img-top rounded-end my-auto d-block img-fluid-full" style="width:300px; height:300px;" src="{{ .Params.image }}" alt="{{ .Params.name }}">
+    <div class="card-body ps-3" style="max-width:700px;">
+      <h5 class="card-title" style="color: #ea4335; font-weight: 500; font-size: 36px !important;">{{ .Params.name }}</h5>
+      <h5 class="card-title" style="font-size:16px; font-weight: 500;">{{ .Params.position }}</h5>
+      <p class="card-text">{{ .Params.description }}</p>
+      <a href="{{ .Params.linkedin }}"><img src ="/icons/LI-In.jpg"></a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+{{ end }}
