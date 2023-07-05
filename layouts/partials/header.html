@@ -3,6 +3,8 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <a class="navbar-brand pe-4" href="/">
             <img src="/img/logo.jpg" alt="SEQRED" class="d-inline-block align-top" />
+            {{ $sections := .Site.GetPage "/index"}}
+            <h2 class="section-header">{{ .Title }}</h2>
           </a>
           <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-display="static" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
