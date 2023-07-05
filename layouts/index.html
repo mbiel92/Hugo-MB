@@ -17,7 +17,22 @@
                             </blockquote>
                         </div>
                     </div>                 
-
+                    <div class="col col-xl-4 col-lg-6 col-md-12">
+                        <div class="news-header">
+                            <h5>{{ .Params.News }}</h5>
+                        </div>
+                        {{ end }}
+                        <div class="news-body px-4">
+                            {{ $news := .Site.GetPage "/news"}}
+                            {{ range $news.Pages }}
+                            <blockquote class="mt-4">
+                            <p>
+                                <a href="{{.Permalink}}">{{ .Params.Title}}</a>
+                            <p>
+                            </blockquote>
+                            {{ end }}
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
