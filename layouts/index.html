@@ -17,7 +17,7 @@
                             </blockquote>
                         </div>
                     </div>                 
-                    <div class="col col-xl-4 col-lg-6 col-md-12">
+                    <div class="col col-xl-4 col-lg-6 col-md-12" style="display: none;">
                         <div class="news-header">
                             <h5>{{ .Params.News }}</h5>
                         </div>
@@ -104,10 +104,10 @@
         {{ end }}
 
         {{ if (eq $index 4) }}
-        <div class="container pt-4">
+        <div class="container pt-4" style="display: none;">
             <h2 class="section-header">{{ .Title }}</h2>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid"style="display: none;">
             <div class="container py-4">
                 <div class="row">
                     {{ .Content }}
