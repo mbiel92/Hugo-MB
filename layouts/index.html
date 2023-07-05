@@ -1,18 +1,18 @@
 {{ define "main" }}
 <style>
-.banner-text blockquote {color: white !important;}
+.banner-text blockquote {color: black !important;}
 </style>
 <main aria-role="main">
-    <div class="container-fluid p-0">
+    <div class="container">
         <div id="index-banner">
             <div class="container">
                 {{ with .Site.GetPage "/index/index"}}
                 <div class="row">
                   <div class="col col-xl-8 col-lg-6 col-md-12">
-                        <div class="banner-text">
+                        <div class="banner-text"style="margin-top: 100px;margin-left: 100px;">
                                 <img src="/img/logo.jpg"></br>
                                 {{ range .Params.Subtitle }}
-                                <h1 style="color: white !important;">{{ . }}</h1>
+                                <h1 style="color: black">{{ . }}</h1>
                                 {{ end }}
                             
                         </div>
