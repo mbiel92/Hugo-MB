@@ -179,10 +179,10 @@
                             
         <div class="container py-3">
             <div class="row">
-                <div class="col-8">
+                <div class="col-12">
                     <div class="row row-md-cols-2">          
                     {{ range first 4 $blog.Pages }}
-                    <div class="col-md-6 col-xs-12 py-3">
+                    <div class="col-md-3 col-xs-12 py-3">
             <div class="card h-100">
                 <div class="card-wrap">
                     <a href="{{ .Permalink }}"> <img src="{{ .Params.image }}" class="card-img-top img-fluid" alt="{{ .Title }}" style="height: 200px"> </a>
