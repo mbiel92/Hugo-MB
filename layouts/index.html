@@ -168,33 +168,15 @@
             <div class="container py-4">
 
 
-
+                
                 <h2>Our  Partners</h2>
-                <section class="customer-logos slider">
+                <section class="customer-logos slider text-center">
+                    {{ range .Params.Partners }}
                    <div class="slide">
-                     <img decoding="async" src="images/1.jpg">
+                     <img decoding="async" src="{{ .logo }}">
+                     {{ .text }}
                    </div>
-                   <div class="slide">
-                     <img decoding="async" src="images/5.jpg">
-                   </div>
-                   <div class="slide">
-                     <img decoding="async" src="images/3.jpg">
-                   </div>
-                   <div class="slide">
-                     <img decoding="async" src="images/4.jpg">
-                   </div>
-                   <div class="slide">
-                     <img decoding="async" src="images/2.jpg">
-                   </div>
-                   <div class="slide">
-                     <img decoding="async" src="images/6.jpg">
-                   </div>
-                   <div class="slide">
-                     <img decoding="async" src="images/7.jpg">
-                   </div>
-                   <div class="slide">
-                     <img decoding="async" src="images/8.jpg">
-                   </div>
+                   {{ end }}
                 </section>
 
 
