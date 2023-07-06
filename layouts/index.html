@@ -15,6 +15,35 @@
 <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="main.js"></script>
+<script>$(document).ready(function () {
+    $(".customer-logos").slick({
+      slidesToShow: 6,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 1500,
+      arrows: false,
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 4
+          }
+        },
+        {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 3
+          }
+        }
+      ]
+    });
+  });
+  
+  
+  
+  </script>
 
 <main aria-role="main">
     <div class="container">
@@ -186,7 +215,7 @@
 
 
                 
-                <div class="row">
+                <div class="row"style="display:none;">
                     {{ range .Params.Partners }}
                     <div class="col-md-4 text-center">
                         <img class="mx-auto d-block py-4" src="{{ .logo }}">
