@@ -7,7 +7,7 @@
   margin: 0px 10px;
 } 
 .slick-slide img {
-  width: 100%;
+ /* width: 100%; */
 }
 </style>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
@@ -28,13 +28,13 @@
         {
           breakpoint: 768,
           settings: {
-            slidesToShow: 4
+            slidesToShow: 2
           }
         },
         {
           breakpoint: 520,
           settings: {
-            slidesToShow: 3
+            slidesToShow: 1
           }
         }
       ]
@@ -180,7 +180,7 @@
                         {{ range .Params.Icons }}
                         <div class="col-md-4 text-center">
                             <img class="mx-auto d-block py-4" src="{{ .image }}">
-                            {{ .text }}
+                          <p style="text-align: center;">  {{ .text }}</p>
                         </div>
                         {{ end }}
                     </div>
@@ -191,18 +191,17 @@
         {{ if (eq $index 3) }}
         <!-- partnerzy/karuzela -->
         <div class="container pt-4">
-            <h2 class="section-header">{{ .Title }}</h2>
         </div>
         <div class="container-fluid">
             <div class="container py-4">
 
 
                 
-                <h2>Our  Partners</h2>
+                <h2 style="color: #ea4335; text-align: center;">{{ .Title }}</h2>
                 <section class="customer-logos slider text-center">
                     {{ range .Params.Partners }}
                    <div class="slide">
-                     <img decoding="async" src="{{ .logo }}">
+                     <img class="center-block" decoding="async" src="{{ .logo }}">
                      {{ .text }}
                    </div>
                    {{ end }}
