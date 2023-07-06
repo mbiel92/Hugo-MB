@@ -1,5 +1,5 @@
 ---
-title: "Services"
+title: "News"
 ---
 
 {{< card image="/img/Seqred_security_audits_and_tests.jpg" title="Security tests and audits" >}}

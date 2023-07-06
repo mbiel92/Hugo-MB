@@ -1,5 +1,5 @@
 ---
-title: "Usługi"
+title: "Aktualności"
 ---
 
 {{< card image="/img/Seqred_security_audits_and_tests.jpg" title="Audyty i testy bezpieczeństwa" >}}
