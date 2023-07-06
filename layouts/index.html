@@ -88,11 +88,11 @@
         {{ range $index, $element := sort ($sections.Resources.Match "section*.md") ".Name"}}
 
         {{ if (eq $index 0) }}
-        <div class="container pt-4 pb-3"style="margin-top:60px;margin-bottom:100px;">
+        <div class="container pt-4 pb-3"style="margin-top:60px;">
             <h1 style="text-align: center;color: #ea4335;font-weight: bold;" class="section-header">{{ .Title }}</h1>
         </div>
 <!--circle-->
-        <div class="container">
+        <div class="container"style="margin-bottom:100px;">
             <div class="row">
               <div class="col-md-4" style="text-align: center;">
                 <div class="row"style="margin-top: 100px;">
@@ -176,7 +176,7 @@
         </div>
         {{ end }}
 
-        {{ if (eq $index 3) }}
+        {{ if (eq $index 2) }}
         <!-- partnerzy/karuzela -->
         <div class="container pt-4">
         </div>
@@ -216,7 +216,7 @@
 
 
 
-        {{ if (eq $index 2) }}
+        {{ if (eq $index 3) }}
         {{ $blog := .Site.GetPage "/blog"}}
                             
         <div class="container py-3">
