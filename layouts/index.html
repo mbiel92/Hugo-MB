@@ -88,7 +88,7 @@
         {{ range $index, $element := sort ($sections.Resources.Match "section*.md") ".Name"}}
 
         {{ if (eq $index 0) }}
-        <div class="container pt-4 pb-3"style="margin-top:60px;">
+        <div class="container pt-4 pb-3"style="margin-top:60px;margin-bottom:100px;">
             <h1 style="text-align: center;color: #ea4335;font-weight: bold;" class="section-header">{{ .Title }}</h1>
         </div>
 <!--circle-->
