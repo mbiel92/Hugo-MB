@@ -1,5 +1,5 @@
 ---
-title: CYBERBEZPIECZEŃSTWO
+title: Aktualności
 Icons: [
     { image: "/img/icon_team.png",
       text: "Świadomość cyberzagrożeń nie wystarczy, jeśli wiedza nie jest poparta odpowiednimi działaniami" }, 

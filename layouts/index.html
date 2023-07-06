@@ -176,31 +176,6 @@
         </div>
         {{ end }}
 
-        {{ if (eq $index 2) }}
-        {{ $blog := .Site.GetPage "/blog"}}
-                            
-        <div class="container py-3">
-            <div class="row">
-                <div class="col-12">
-                    <h2 style="color: #ea4335; text-align: center;">{{ .Title }}</h2>
-                    <div class="row row-md-cols-2">          
-                    {{ range first 4 $blog.Pages }}
-                    <div class="col-md-3 col-xs-12 py-3" style="max-height: 550px;">
-            <div class="card h-100">
-                <div class="card-wrap">
-                    <a href="{{ .Permalink }}"> <img src="{{ .Params.image }}" class="card-img-top img-fluid" alt="{{ .Title }}" style="height: 200px"> </a>
-                        </div>
-                <div class="card-body blog-card--body">
-                    <h5 class="card-title blog-card--title">{{ .Title }}</h5>
-                    <p class="card-text blog-card--date">{{ .Date.Format  "02.01.2006"}}</p>
-                    <p class="card-text blog-card--summary" style="max-height: 150px; overflow: scroll;">{{ .Summary }}</p>
-                    <a href="{{ .Permalink }}" class="btn btn-primary text-white">{{i18n "more"}}</a>
-                </div>
-              </div>
-            </div>
-        {{ end }}
-        {{ end }}
-
         {{ if (eq $index 3) }}
         <!-- partnerzy/karuzela -->
         <div class="container pt-4">
@@ -237,6 +212,33 @@
                 </div>
             </div>
         </div>
+        {{ end }}
+
+
+
+        {{ if (eq $index 2) }}
+        {{ $blog := .Site.GetPage "/blog"}}
+                            
+        <div class="container py-3">
+            <div class="row">
+                <div class="col-12">
+                    <h2 style="color: #ea4335; text-align: center;">{{ .Title }}</h2>
+                    <div class="row row-md-cols-2">          
+                    {{ range first 4 $blog.Pages }}
+                    <div class="col-md-3 col-xs-12 py-3" style="max-height: 550px;">
+            <div class="card h-100">
+                <div class="card-wrap">
+                    <a href="{{ .Permalink }}"> <img src="{{ .Params.image }}" class="card-img-top img-fluid" alt="{{ .Title }}" style="height: 200px"> </a>
+                        </div>
+                <div class="card-body blog-card--body">
+                    <h5 class="card-title blog-card--title">{{ .Title }}</h5>
+                    <p class="card-text blog-card--date">{{ .Date.Format  "02.01.2006"}}</p>
+                    <p class="card-text blog-card--summary" style="max-height: 150px; overflow: scroll;">{{ .Summary }}</p>
+                    <a href="{{ .Permalink }}" class="btn btn-primary text-white">{{i18n "more"}}</a>
+                </div>
+              </div>
+            </div>
+        {{ end }}
         {{ end }}
 
         {{ if (eq $index 4) }}

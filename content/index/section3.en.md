@@ -1,5 +1,5 @@
 ---
-title: Cybersecurity
+title: News
 Icons: [
     { image: "/img/icon_team.png",
       text: "In most cases, being aware of different cyberthreats is not enough if this knowledge does not go in pair with appropriate actions" }, 
