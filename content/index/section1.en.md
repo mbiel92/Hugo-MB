@@ -1,5 +1,5 @@
 ---
-title: "Your cybersecurity partner"
+title: "Four steps to security"
 icon: "/img/ci_shield_white.png"
 ---
 
