@@ -40,17 +40,19 @@
         {{ range $index, $element := sort ($sections.Resources.Match "section*.md") ".Name"}}
 
         {{ if (eq $index 0) }}
-        <div class="container pt-4 pb-3">
-            <h1 style="text-align: center;color: #ea4335;" class="section-header">{{ .Title }}</h1>
+        <div class="container pt-4 pb-3"style="margin-top:60px;">
+            <h1 style="text-align: center;color: #ea4335;font-weight: bold;" class="section-header">{{ .Title }}</h1>
         </div>
 <!--circle-->
         <div class="container">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-4" style="text-align: center;">
                 <div class="row">
                   <div class="col-md-12">
                     <!-- First column, first row -->
-                    <h2>Column 1 - Row 1</h2>
+              <h2>{{ .Step1 }}</h2>  </br>
+                   <a href="#"> <h2 class="section-header" style="color:#ea4335;">{{ .Step1a }}</h2></a>
+    
                   </div>
                 </div>
                 <div class="row">
@@ -59,24 +61,18 @@
                     <h2>Column 1 - Row 2</h2>
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <!-- First column, third row -->
-                    <h2>Column 1 - Row 3</h2>
-                  </div>
-                </div>
               </div>
               
               <div class="col-md-4">
                 <div class="row">
                   <div class="col-md-12">
                     <!-- Second column, single row -->
-                   <img src="/img/circle.jpg">
+                   <img style= "max-width: 500px;"src="/img/circle.jpg">
                   </div>
                 </div>
               </div>
               
-              <div class="col-md-4">
+              <div class="col-md-4" style="text-align: center;">
                 <div class="row">
                   <div class="col-md-12">
                     <!-- Third column, first row -->
@@ -87,12 +83,6 @@
                   <div class="col-md-12">
                     <!-- Third column, second row -->
                     <h2>Column 3 - Row 2</h2>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12">
-                    <!-- Third column, third row -->
-                    <h2>Column 3 - Row 3</h2>
                   </div>
                 </div>
               </div>
