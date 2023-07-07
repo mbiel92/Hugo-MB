@@ -306,40 +306,40 @@ news = "/:year/:month/:filename"
         name = "Projektowanie"
         url = "/pl/services/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "Projektowanie"
 
     [[languages.pl.menu.main]]
         name = "Projektowanie mechanizmów kontrolnych I rozwiązań bezpieczeństwa"
         url = "/pl/services/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "Projektowanie"
 
     [[languages.pl.menu.main]]
         name = "Secure product"
         url = "/pl/services/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "Projektowanie"
 
     [[languages.pl.menu.main]]
         name = "DevelopmentChmura"
         url = "/pl/services/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "Projektowanie"
 
     [[languages.pl.menu.main]]
         name = "Segmentacja I separacja Sieci"
         url = "/pl/services/segmentacja-sieci/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "Projektowanie"
 
     [[languages.pl.menu.main]]
         name = "Security Architect As A Service"
         url = "/pl/services/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "Projektowanie"
 
     [[languages.pl.menu.main]]        
-        identifier = "WDRAŻANIE"
+        identifier = "Wdrażanie"
         name = "WDRAŻANIE"
         url = "/"
         weight = 3
@@ -348,55 +348,55 @@ news = "/:year/:month/:filename"
         name = "Wdrażanie rozwiązań bezpieczeństwa"
         url = "/pl/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Wdrażanie"
             
     [[languages.pl.menu.main]]
         name = "Chmura"
         url = "/pl/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Wdrażanie"
             
     [[languages.pl.menu.main]]
         name = "Threat Intelligence"
         url = "/services/open-source-intelligence/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Wdrażanie"
             
     [[languages.pl.menu.main]]
         name = "Ami"
         url = "/services/ami-system-security/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Wdrażanie"
             
     [[languages.pl.menu.main]]
         name = "Fortinet"
         url = "/pl/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Wdrażanie"
             
     [[languages.pl.menu.main]]
         name = "Nozomi"
         url = "/pl/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Wdrażanie"
             
     [[languages.pl.menu.main]]
         name = "Honeywell"
         url = "/pl/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Wdrażanie"
             
     [[languages.pl.menu.main]]
         name = "IBM"
         url = "/pl/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Wdrażanie"
             
     [[languages.pl.menu.main]]
         name = "eSecure"
         url = "/pl/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Wdrażanie"
         
     [[languages.pl.menu.main]]
         identifier = "Utrzymanie"
@@ -408,25 +408,25 @@ news = "/:year/:month/:filename"
         name = "Utrzymanie mechanizmów bezpieczeństwa"
         url = "/pl/services/"
         weight = 4
-        parent = "UTRZYMANIE"
+        parent = "Utrzymanie"
                     
     [[languages.pl.menu.main]]
         name = "Chmura"
         url = "/pl/services/"
         weight = 4
-        parent = "UTRZYMANIE"
+        parent = "Utrzymanie"
                     
     [[languages.pl.menu.main]]
         name = "Zarządzanie bezpieczeństwem środowiska O365"
         url = "/pl/services/"
         weight = 4
-        parent = "UTRZYMANIE"
+        parent = "Utrzymanie"
                     
     [[languages.pl.menu.main]]
         name = "Security Architect As A Service"
         url = "/pl/services/"
         weight = 4
-        parent = "UTRZYMANIE"                  
+        parent = "Utrzymanie"                  
 
     [[languages.pl.menu.main]]
         identifier = "Knowledge"
