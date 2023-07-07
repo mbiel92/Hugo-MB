@@ -102,79 +102,133 @@ news = "/:year/:month/:filename"
         name = "Projektowanie"
         url = "/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "PLANNING"
 
     [[languages.en.menu.main]]
         name = "Projektowanie mechanizmów kontrolnych I rozwiązań bezpieczeństwa"
         url = "/pl/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "PLANNING"
 
     [[languages.en.menu.main]]
         name = "Secure product"
         url = "/pl/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "PLANNING"
 
     [[languages.en.menu.main]]
         name = "DevelopmentChmura"
         url = "/pl/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "PLANNING"
 
     [[languages.en.menu.main]]
         name = "Segmentacja I separacja Sieci"
         url = "/pl/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "PLANNING"
 
     [[languages.en.menu.main]]
         name = "Security Architect As A Service"
         url = "/pl/"
         weight = 2
-        parent = "PROJEKTOWANIE"
+        parent = "PLANNING"
 
     [[languages.en.menu.main]]        
-        identifier = "Products"
-        name = "PRODUCTS"
+        identifier = "WDRAŻANIE"
+        name = "WDRAŻANIE"
         url = "/en/products/"
         weight = 3
     
     [[languages.en.menu.main]]
-        identifier = "Events"
-        name = "EVENTS"
-        url = "/events/"
-        weight = 4
+        name = "Wdrażanie rozwiązań bezpieczeństwa"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.en.menu.main]]
+        name = "Chmura"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.en.menu.main]]
+        name = "Threat Intelligence"
+        url = "/services/open-source-intelligence/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.en.menu.main]]
+        name = "Ami"
+        url = "/services/ami-system-security/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.en.menu.main]]
+        name = "Fortinet"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.en.menu.main]]
+        name = "Nozomi"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.en.menu.main]]
+        name = "Honeywell"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.en.menu.main]]
+        name = "IBM"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.en.menu.main]]
+        name = "eSecure"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
 
-     [[languages.en.menu.main]]
-        identifier = "News"
-        name = "NEWS"
-        url = "/news/"
-        weight = 5
-    
     [[languages.en.menu.main]]
-        identifier = "Career"
-        name = "CAREER"
-        url = "/career/"
-        weight = 6
-    
+        identifier = "Utrzymanie"
+        name = "UTRZYMANIE"
+        url = "/"
+        weight = 4
+                    
     [[languages.en.menu.main]]
-        identifier = "Blog"
-        name = "BLOG"
-        url = "/blog/"
-        weight = 7
+        name = "Utrzymanie mechanizmów bezpieczeństwa"
+        url = "/pl/"
+        weight = 4
+        parent = "UTRZYMANIE"
+                    
+    [[languages.en.menu.main]]
+        name = "Chmura"
+        url = "/pl/"
+        weight = 4
+        parent = "UTRZYMANIE"
+                    
+    [[languages.en.menu.main]]
+        name = "Zarządzanie bezpieczeństwem środowiska O365"
+        url = "/pl/"
+        weight = 4
+        parent = "UTRZYMANIE"
+                    
+    [[languages.en.menu.main]]
+        name = "Security Architect As A Service"
+        url = "/pl/"
+        weight = 4
+        parent = "UTRZYMANIE"                  
 
     [[languages.en.menu.main]]
         identifier = "Knowledge"
         name = "KNOWLEDGE"
         url = "/knowledge/"
-        weight = 8
-
-    [[languages.en.menu.main]]
-        identifier = "Contact"
-        name = "CONTACT"
-        url = "/contact/"
-        weight = 9
+        weight = 5
 
 [languages.pl]
     title = 'SEQRED | Bezpieczne OT i IoT - Audyty bezpieczeństwa - Cyberbezpieczeństwo'
@@ -284,74 +338,160 @@ news = "/:year/:month/:filename"
         weight = 2
         parent = "PROJEKTOWANIE"
 
-    [[languages.pl.menu.main]]
-        identifier = "Products"
-        name = "PRODUKTY"
-        url = "/produkty/"
+    [[languages.pl.menu.main]]        
+        identifier = "WDRAŻANIE"
+        name = "WDRAŻANIE"
+        url = "/en/products/"
         weight = 3
+    
+    [[languages.pl.menu.main]]
+        name = "Wdrażanie rozwiązań bezpieczeństwa"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.pl.menu.main]]
+        name = "Chmura"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.pl.menu.main]]
+        name = "Threat Intelligence"
+        url = "/services/open-source-intelligence/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.pl.menu.main]]
+        name = "Ami"
+        url = "/services/ami-system-security/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.pl.menu.main]]
+        name = "Fortinet"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.pl.menu.main]]
+        name = "Nozomi"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.pl.menu.main]]
+        name = "Honeywell"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.pl.menu.main]]
+        name = "IBM"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
+            
+    [[languages.pl.menu.main]]
+        name = "eSecure"
+        url = "/pl/"
+        weight = 3
+        parent = "WDRAŻANIE"
         
     [[languages.pl.menu.main]]
-        identifier = "Events"
-        name = "WYDARZENIA"
-        url = "/wydarzenia/"
+        identifier = "Utrzymanie"
+        name = "UTRZYMANIE"
+        url = "/"
         weight = 4
-
-     [[languages.pl.menu.main]]
-        identifier = "News"
-        name = "AKTUALNOŚCI"
-        url = "/pl/news/"
-        weight = 5
-
+                    
     [[languages.pl.menu.main]]
-        identifier = "Career"
-        name = "KARIERA"
-        url = "/pl/career/"
-        weight = 6
-
+        name = "Utrzymanie mechanizmów bezpieczeństwa"
+        url = "/pl/"
+        weight = 4
+        parent = "UTRZYMANIE"
+                    
     [[languages.pl.menu.main]]
-        identifier = "Blog"
-        name = "BLOG"
-        url = "/pl/blog/"
-        weight = 7
+        name = "Chmura"
+        url = "/pl/"
+        weight = 4
+        parent = "UTRZYMANIE"
+                    
+    [[languages.pl.menu.main]]
+        name = "Zarządzanie bezpieczeństwem środowiska O365"
+        url = "/pl/"
+        weight = 4
+        parent = "UTRZYMANIE"
+                    
+    [[languages.pl.menu.main]]
+        name = "Security Architect As A Service"
+        url = "/pl/"
+        weight = 4
+        parent = "UTRZYMANIE"                  
 
     [[languages.pl.menu.main]]
         identifier = "Knowledge"
         name = "WIEDZA"
         url = "/wiedza/"
-        weight = 8
+        weight = 5
 
-    [[languages.pl.menu.main]]
-        identifier = "Contact"
-        name = "KONTAKT"
-        url = "/kontakt/"
-        weight = 9
+    [[languages.en.menu.footer]]
+        identifier = "About"
+        name = "ABOUT"
+        url = "/about-us/"
+        weight = 1
 
     [[languages.en.menu.footer]]
         identifier = "Services"
         name = "SERVICES"
         url = "/services"
-        weight = 1
+        weight = 2
 
     [[languages.en.menu.footer]]
-        name = "IT Consulting"
-        url = "/it-consulting"
-        weight = 1
-        parent ="Services"
+        identifier = "Events"
+        name = "EVENTS"
+        url = "/events"
+        weight = 3
 
     [[languages.en.menu.footer]]
-        name = "Development"
-        url = "/development"
-        weight = 1
-        parent ="Services"
+        identifier = "Blog"
+        name = "BLOG"
+        url = "/blog"
+        weight = 4
 
     [[languages.en.menu.footer]]
-        name = "Cloud"
-        url = "/cloud"
-        weight = 1
-        parent ="Services"
+        identifier = "Contact"
+        name = "CONTACT"
+        url = "/contact"
+        weight = 5
 
-    [[languages.en.menu.footer]]
-        name = "Support"
-        url = "/support"
+    [[languages.pl.menu.footer]]
+        identifier = "About"
+        name = "ABOUT"
+        url = "/pl/about-us/"
         weight = 1
-        parent ="Services"
+
+    [[languages.pl.menu.footer]]
+        identifier = "Services"
+        name = "SERVICES"
+        url = "/pl/services"
+        weight = 2
+
+    [[languages.pl.menu.footer]]
+        identifier = "Events"
+        name = "EVENTS"
+        url = "/pl/events"
+        weight = 3
+
+    [[languages.pl.menu.footer]]
+        identifier = "Blog"
+        name = "BLOG"
+        url = "/pl/blog"
+        weight = 4
+
+    [[languages.pl.menu.footer]]
+        identifier = "Contact"
+        name = "CONTACT"
+        url = "/kontakt"
+        weight = 5
+
+
