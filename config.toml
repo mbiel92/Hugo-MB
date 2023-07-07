@@ -435,16 +435,16 @@ news = "/:year/:month/:filename"
         weight = 5
 
     [[languages.en.menu.footer]]
-        identifier = "About"
-        name = "ABOUT"
-        url = "/about-us/"
+        identifier = "Links"
+        name = ""
+        url = "/"
         weight = 1
 
     [[languages.en.menu.footer]]
-        identifier = "Links"
-        name = "LINKS"
-        url = "/"
+        name = "ABOUT"
+        url = "/about-us/"
         weight = 1
+        parent = "Links"
 
     [[languages.en.menu.footer]]
         name = "SERVICES"
@@ -472,7 +472,7 @@ news = "/:year/:month/:filename"
 
     [[languages.pl.menu.footer]]
         identifier = "Odnośniki"
-        name = "ODNOŚNIKI"
+        name = ""
         url = "/"
         weight = 1
     
