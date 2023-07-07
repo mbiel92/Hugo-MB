@@ -341,7 +341,7 @@ news = "/:year/:month/:filename"
     [[languages.pl.menu.main]]        
         identifier = "WDRAŻANIE"
         name = "WDRAŻANIE"
-        url = "/en/products/"
+        url = "/"
         weight = 3
     
     [[languages.pl.menu.main]]
@@ -443,25 +443,25 @@ news = "/:year/:month/:filename"
     [[languages.en.menu.footer]]
         identifier = "Services"
         name = "SERVICES"
-        url = "/services"
+        url = "/services/"
         weight = 2
 
     [[languages.en.menu.footer]]
         identifier = "Events"
         name = "EVENTS"
-        url = "/events"
+        url = "/events/"
         weight = 3
 
     [[languages.en.menu.footer]]
         identifier = "Blog"
         name = "BLOG"
-        url = "/blog"
+        url = "/blog/"
         weight = 4
 
     [[languages.en.menu.footer]]
         identifier = "Contact"
         name = "CONTACT"
-        url = "/contact"
+        url = "/contact/"
         weight = 5
 
     [[languages.pl.menu.footer]]
@@ -473,25 +473,25 @@ news = "/:year/:month/:filename"
     [[languages.pl.menu.footer]]
         identifier = "Services"
         name = "SERVICES"
-        url = "/pl/services"
+        url = "/pl/services/"
         weight = 2
 
     [[languages.pl.menu.footer]]
         identifier = "Events"
         name = "EVENTS"
-        url = "/pl/events"
+        url = "/pl/events/"
         weight = 3
 
     [[languages.pl.menu.footer]]
         identifier = "Blog"
         name = "BLOG"
-        url = "/pl/blog"
+        url = "/pl/blog/"
         weight = 4
 
     [[languages.pl.menu.footer]]
         identifier = "Contact"
         name = "CONTACT"
-        url = "/kontakt"
+        url = "/kontakt/"
         weight = 5
 
 
