@@ -297,7 +297,7 @@ news = "/:year/:month/:filename"
         parent = "Ocena"
 
     [[languages.pl.menu.main]]
-        identifier = "Projektowanie"
+        identifier = "Planning1"
         name = "PROJEKTOWANIE"
         url = "/"
         weight = 2
@@ -306,37 +306,37 @@ news = "/:year/:month/:filename"
         name = "Projektowanie"
         url = "/pl/services/"
         weight = 2
-        parent = "Projektowanie"
+        parent = "Planning1"
 
     [[languages.pl.menu.main]]
         name = "Projektowanie mechanizmów kontrolnych I rozwiązań bezpieczeństwa"
         url = "/pl/services/"
         weight = 2
-        parent = "Projektowanie"
+        parent = "Planning1"
 
     [[languages.pl.menu.main]]
         name = "Secure product"
         url = "/pl/services/"
         weight = 2
-        parent = "Projektowanie"
+        parent = "Planning1"
 
     [[languages.pl.menu.main]]
         name = "DevelopmentChmura"
         url = "/pl/services/"
         weight = 2
-        parent = "Projektowanie"
+        parent = "Planning1"
 
     [[languages.pl.menu.main]]
         name = "Segmentacja I separacja Sieci"
         url = "/pl/services/segmentacja-sieci/"
         weight = 2
-        parent = "Projektowanie"
+        parent = "Planning1"
 
     [[languages.pl.menu.main]]
         name = "Security Architect As A Service"
         url = "/pl/services/"
         weight = 2
-        parent = "Projektowanie"
+        parent = "Planning1"
 
     [[languages.pl.menu.main]]        
         identifier = "Wdrażanie"
