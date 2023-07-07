@@ -102,41 +102,41 @@ news = "/:year/:month/:filename"
         name = "Projektowanie"
         url = "/services/"
         weight = 2
-        parent = "PLANNING"
+        parent = "Planning"
 
     [[languages.en.menu.main]]
         name = "Projektowanie mechanizmów kontrolnych I rozwiązań bezpieczeństwa"
         url = "/services/"
         weight = 2
-        parent = "PLANNING"
+        parent = "Planning"
 
     [[languages.en.menu.main]]
         name = "Secure product"
         url = "/services/"
         weight = 2
-        parent = "PLANNING"
+        parent = "Planning"
 
     [[languages.en.menu.main]]
         name = "DevelopmentChmura"
         url = "/services/"
         weight = 2
-        parent = "PLANNING"
+        parent = "Planning"
 
     [[languages.en.menu.main]]
         name = "Segmentacja I separacja Sieci"
         url = "/services/"
         weight = 2
-        parent = "PLANNING"
+        parent = "Planning"
 
     [[languages.en.menu.main]]
         name = "Security Architect As A Service"
         url = "/services/"
         weight = 2
-        parent = "PLANNING"
+        parent = "Planning"
 
     [[languages.en.menu.main]]        
         identifier = "Implementation"
-        name = "WDRAŻANIE"
+        name = "IMPLEMENTATION"
         url = "/en/products/"
         weight = 3
     
@@ -196,7 +196,7 @@ news = "/:year/:month/:filename"
 
     [[languages.en.menu.main]]
         identifier = "Maintenance"
-        name = "UTRZYMANIE"
+        name = "MAINTENANCE"
         url = "/"
         weight = 4
                     
