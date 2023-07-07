@@ -24,8 +24,9 @@
                 {{ if .HasChildren }}
                 <ul>
                     {{ range .Children }}
-                    <li style="display: inline-block;"><a href="#">{{ .Name }}</a></li>
+                    <li style="display: inline-block;margin-right: 20px;"><a href="#">{{ .Name }}</a></li>
                     {{ end }}
+                    {{ partial "langnav" . }}
                 </ul>
                 {{end}}
             </div>
