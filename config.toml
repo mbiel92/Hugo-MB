@@ -39,56 +39,56 @@ news = "/:year/:month/:filename"
         weight = 1
 
     [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
+        name = "Industrial Control Systems Security Audit"
+        url = "/services/ot-audit/"
         weight = 1
         parent = "Assessment"
 
     [[languages.en.menu.main]]
-        name = "ASSESSMENT"
+        name = "OT Audit"
         url = "/"
         weight = 1
         parent = "Assessment"
         
     [[languages.en.menu.main]]
-        name = "ASSESSMENT"
+        name = "Cybersecurity Bill of Materials"
+        url = "/services/cbom-en/"
+        weight = 1
+        parent = "Assessment"
+        
+    [[languages.en.menu.main]]
+        name = "Penetration tests"
+        url = "/services/penetration-tests/"
+        weight = 1
+        parent = "Assessment"
+        
+    [[languages.en.menu.main]]
+        name = "Security code review"
+        url = "/services/security-code-review/"
+        weight = 1
+        parent = "Assessment"
+        
+    [[languages.en.menu.main]]
+        name = "Red Team"
+        url = "/services/red-teaming-2/"
+        weight = 1
+        parent = "Assessment"
+        
+    [[languages.en.menu.main]]
+        name = "Cloud Services Security"
+        url = "/services/cloud-services-security/"
+        weight = 1
+        parent = "Assessment"
+        
+    [[languages.en.menu.main]]
+        name = "KSC Audit"
         url = "/"
         weight = 1
         parent = "Assessment"
         
     [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
+        name = "Mobile Device Security"
+        url = "/services/mobile-device-security/"
         weight = 1
         parent = "Assessment"
 
@@ -172,37 +172,37 @@ news = "/:year/:month/:filename"
         
     [[languages.pl.menu.main]]
         name = "Testy penetracyjne"
-        url = "/"
+        url = "/pl/services/testy-penetracyjne/"
         weight = 1
         parent = "Ocena"
         
     [[languages.pl.menu.main]]
         name = "Audyt bezpieczeństwa kodu"
-        url = "/"
+        url = "/pl/services/audyt-kodu/"
         weight = 1
         parent = "Ocena"
         
     [[languages.pl.menu.main]]
         name = "Red Team"
-        url = "/"
+        url = "/pl/services/red-team/"
         weight = 1
         parent = "Ocena"
         
     [[languages.pl.menu.main]]
         name = "Chmura"
-        url = "/"
+        url = "/pl/services/uslugi-chmurowe/"
         weight = 1
         parent = "Ocena"
         
     [[languages.pl.menu.main]]
         name = "Audyt KSC"
-        url = "/"
+        url = "/pl/services/audyt-ksc/"
         weight = 1
         parent = "Ocena"
         
     [[languages.pl.menu.main]]
         name = "Urządzenia mobilne"
-        url = "/"
+        url = "/pl/services/audyt-bezpieczenstwa-urzadzen-mobilnych/"
         weight = 1
         parent = "Ocena"
 
