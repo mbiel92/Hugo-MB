@@ -9,18 +9,22 @@
                         <a href="{{ .Site.Params.linkedInUrl }}" target="_blank"><i class="fa-brands fa-linkedin fa-lg"></i></a>
                     </div>
                     <div class="company-info">
-                        <span class="fw-bold sq-red">SEQRED&nbsp;</span>{{ i18n "globalOrganization" . }}
+                        <p><span style="color: #ea4335;">SEQRED Sp. z o.o.</span><br>
+                            ul. Rybnicka 52, 02-432 Warszawa<br>
+                            tel. +48 22 292 32 23<br>
+                            fax +48 22 292 32 21<br>
+                            <a href="mailto:biuro@seqred.pl">biuro@seqred.pl</a></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2 col-sm-2 col-xs-2"></div>
+            <div class="col-md-6 col-sm-2 col-xs-2"></div>
             {{ range .Site.Menus.footer }} 
             <div class="col-md-2 col-sm-2 col-xs-2">
                 <span class="heading">{{ .Name }}</span>
                 {{ if .HasChildren }}
                 <ul>
                     {{ range .Children }}
-                    <li><a href="#">{{ .Name }}</a></li>
+                    <li style="display: inline-block;"><a href="#">{{ .Name }}</a></li>
                     {{ end }}
                 </ul>
                 {{end}}
