@@ -82,7 +82,7 @@ news = "/:year/:month/:filename"
         
     [[languages.en.menu.main]]
         name = "KSC Audit"
-        url = "/"
+        url = "/services/"
         weight = 1
         parent = "Assessment"
         
@@ -100,37 +100,37 @@ news = "/:year/:month/:filename"
 
     [[languages.en.menu.main]]
         name = "Projektowanie"
-        url = "/"
+        url = "/services/"
         weight = 2
         parent = "PLANNING"
 
     [[languages.en.menu.main]]
         name = "Projektowanie mechanizmów kontrolnych I rozwiązań bezpieczeństwa"
-        url = "/pl/"
+        url = "/services/"
         weight = 2
         parent = "PLANNING"
 
     [[languages.en.menu.main]]
         name = "Secure product"
-        url = "/pl/"
+        url = "/services/"
         weight = 2
         parent = "PLANNING"
 
     [[languages.en.menu.main]]
         name = "DevelopmentChmura"
-        url = "/pl/"
+        url = "/services/"
         weight = 2
         parent = "PLANNING"
 
     [[languages.en.menu.main]]
         name = "Segmentacja I separacja Sieci"
-        url = "/pl/"
+        url = "/services/"
         weight = 2
         parent = "PLANNING"
 
     [[languages.en.menu.main]]
         name = "Security Architect As A Service"
-        url = "/pl/"
+        url = "/services/"
         weight = 2
         parent = "PLANNING"
 
@@ -142,13 +142,13 @@ news = "/:year/:month/:filename"
     
     [[languages.en.menu.main]]
         name = "Wdrażanie rozwiązań bezpieczeństwa"
-        url = "/pl/"
+        url = "/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
     [[languages.en.menu.main]]
         name = "Chmura"
-        url = "/pl/"
+        url = "/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
@@ -166,31 +166,31 @@ news = "/:year/:month/:filename"
             
     [[languages.en.menu.main]]
         name = "Fortinet"
-        url = "/pl/"
+        url = "/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
     [[languages.en.menu.main]]
         name = "Nozomi"
-        url = "/pl/"
+        url = "/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
     [[languages.en.menu.main]]
         name = "Honeywell"
-        url = "/pl/"
+        url = "/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
     [[languages.en.menu.main]]
         name = "IBM"
-        url = "/pl/"
+        url = "/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
     [[languages.en.menu.main]]
         name = "eSecure"
-        url = "/pl/"
+        url = "/services/"
         weight = 3
         parent = "WDRAŻANIE"
 
@@ -202,25 +202,25 @@ news = "/:year/:month/:filename"
                     
     [[languages.en.menu.main]]
         name = "Utrzymanie mechanizmów bezpieczeństwa"
-        url = "/pl/"
+        url = "/services/"
         weight = 4
         parent = "UTRZYMANIE"
                     
     [[languages.en.menu.main]]
         name = "Chmura"
-        url = "/pl/"
+        url = "/services/"
         weight = 4
         parent = "UTRZYMANIE"
                     
     [[languages.en.menu.main]]
         name = "Zarządzanie bezpieczeństwem środowiska O365"
-        url = "/pl/"
+        url = "/services/"
         weight = 4
         parent = "UTRZYMANIE"
                     
     [[languages.en.menu.main]]
         name = "Security Architect As A Service"
-        url = "/pl/"
+        url = "/services/"
         weight = 4
         parent = "UTRZYMANIE"                  
 
@@ -244,19 +244,19 @@ news = "/:year/:month/:filename"
 
     [[languages.pl.menu.main]]
         name = "Ocena efektywności stosowanych mechanizmów kontrolnych"
-        url = "/"
+        url = "/pl/services/"
         weight = 1
         parent = "Ocena"
 
     [[languages.pl.menu.main]]
         name = "Audyt OT"
-        url = "/"
+        url = "/pl/services/"
         weight = 1
         parent = "Ocena"
         
     [[languages.pl.menu.main]]
         name = "CBOM"
-        url = "/"
+        url = "/pl/services/"
         weight = 1
         parent = "Ocena"
         
@@ -304,25 +304,25 @@ news = "/:year/:month/:filename"
 
     [[languages.pl.menu.main]]
         name = "Projektowanie"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 2
         parent = "PROJEKTOWANIE"
 
     [[languages.pl.menu.main]]
         name = "Projektowanie mechanizmów kontrolnych I rozwiązań bezpieczeństwa"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 2
         parent = "PROJEKTOWANIE"
 
     [[languages.pl.menu.main]]
         name = "Secure product"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 2
         parent = "PROJEKTOWANIE"
 
     [[languages.pl.menu.main]]
         name = "DevelopmentChmura"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 2
         parent = "PROJEKTOWANIE"
 
@@ -334,7 +334,7 @@ news = "/:year/:month/:filename"
 
     [[languages.pl.menu.main]]
         name = "Security Architect As A Service"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 2
         parent = "PROJEKTOWANIE"
 
@@ -346,13 +346,13 @@ news = "/:year/:month/:filename"
     
     [[languages.pl.menu.main]]
         name = "Wdrażanie rozwiązań bezpieczeństwa"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
     [[languages.pl.menu.main]]
         name = "Chmura"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
@@ -370,31 +370,31 @@ news = "/:year/:month/:filename"
             
     [[languages.pl.menu.main]]
         name = "Fortinet"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
     [[languages.pl.menu.main]]
         name = "Nozomi"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
     [[languages.pl.menu.main]]
         name = "Honeywell"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
     [[languages.pl.menu.main]]
         name = "IBM"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 3
         parent = "WDRAŻANIE"
             
     [[languages.pl.menu.main]]
         name = "eSecure"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 3
         parent = "WDRAŻANIE"
         
@@ -406,25 +406,25 @@ news = "/:year/:month/:filename"
                     
     [[languages.pl.menu.main]]
         name = "Utrzymanie mechanizmów bezpieczeństwa"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 4
         parent = "UTRZYMANIE"
                     
     [[languages.pl.menu.main]]
         name = "Chmura"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 4
         parent = "UTRZYMANIE"
                     
     [[languages.pl.menu.main]]
         name = "Zarządzanie bezpieczeństwem środowiska O365"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 4
         parent = "UTRZYMANIE"
                     
     [[languages.pl.menu.main]]
         name = "Security Architect As A Service"
-        url = "/pl/"
+        url = "/pl/services/"
         weight = 4
         parent = "UTRZYMANIE"                  
 
@@ -441,57 +441,73 @@ news = "/:year/:month/:filename"
         weight = 1
 
     [[languages.en.menu.footer]]
-        identifier = "Services"
-        name = "SERVICES"
-        url = "/services/"
-        weight = 2
-
-    [[languages.en.menu.footer]]
-        identifier = "Events"
-        name = "EVENTS"
-        url = "/events/"
-        weight = 3
-
-    [[languages.en.menu.footer]]
-        identifier = "Blog"
-        name = "BLOG"
-        url = "/blog/"
-        weight = 4
-
-    [[languages.en.menu.footer]]
-        identifier = "Contact"
-        name = "CONTACT"
-        url = "/contact/"
-        weight = 5
-
-    [[languages.pl.menu.footer]]
-        identifier = "About"
-        name = "ABOUT"
-        url = "/pl/about-us/"
+        identifier = "Links"
+        name = "LINKS"
+        url = "/"
         weight = 1
 
+    [[languages.en.menu.footer]]
+        name = "SERVICES"
+        url = "/services/"
+        weight = 1
+        parent = "Links"
+
+    [[languages.en.menu.footer]]
+        name = "EVENTS"
+        url = "/events/"
+        weight = 1
+        parent = "Links"
+
+    [[languages.en.menu.footer]]
+        name = "BLOG"
+        url = "/blog/"
+        weight = 1
+        parent = "Links"
+
+    [[languages.en.menu.footer]]
+        name = "CONTACT"
+        url = "/contact/"
+        weight = 1
+        parent = "Links"
+
+    [[languages.pl.menu.footer]]
+        identifier = "Linki"
+        name = "LINKS"
+        url = "/"
+        weight = 1
+    
+    [[languages.pl.menu.footer]]
+        name = "O NAS"
+        url = "/pl/about-us/"
+        weight = 1
+        parent = "Links"
+
     [[languages.pl.menu.footer]]
         identifier = "Services"
-        name = "SERVICES"
+        name = "USŁUGI"
         url = "/pl/services/"
-        weight = 2
+        weight = 1
+        parent = "Links"
 
     [[languages.pl.menu.footer]]
         identifier = "Events"
-        name = "EVENTS"
+        name = "WYDARZENIA"
         url = "/pl/events/"
-        weight = 3
+        weight = 1
+        parent = "Links"
 
     [[languages.pl.menu.footer]]
         identifier = "Blog"
         name = "BLOG"
         url = "/pl/blog/"
-        weight = 4
+        weight = 1
+        parent = "Links"
 
     [[languages.pl.menu.footer]]
         identifier = "Contact"
-        name = "CONTACT"
+        name = "KONTAKT"
         url = "/kontakt/"
-        weight = 5
+        weight = 1
+        parent = "Links"
 
 
