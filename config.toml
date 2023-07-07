@@ -93,10 +93,46 @@ news = "/:year/:month/:filename"
         parent = "Assessment"
 
     [[languages.en.menu.main]]
-        identifier = "Services"
-        name = "Services"
-        url = "/services/"
+        identifier = "Planning"
+        name = "PLANNING"
+        url = "/"
         weight = 2
+
+    [[languages.en.menu.main]]
+        name = "Projektowanie"
+        url = "/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
+
+    [[languages.en.menu.main]]
+        name = "Projektowanie mechanizmów kontrolnych I rozwiązań bezpieczeństwa"
+        url = "/pl/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
+
+    [[languages.en.menu.main]]
+        name = "Secure product"
+        url = "/pl/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
+
+    [[languages.en.menu.main]]
+        name = "DevelopmentChmura"
+        url = "/pl/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
+
+    [[languages.en.menu.main]]
+        name = "Segmentacja I separacja Sieci"
+        url = "/pl/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
+
+    [[languages.en.menu.main]]
+        name = "Security Architect As A Service"
+        url = "/pl/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
 
     [[languages.en.menu.main]]        
         identifier = "Products"
@@ -207,10 +243,46 @@ news = "/:year/:month/:filename"
         parent = "Ocena"
 
     [[languages.pl.menu.main]]
-        identifier = "Services"
-        name = "USŁUGI"
-        url = "/uslugi/"
+        identifier = "Projektowanie"
+        name = "PROJEKTOWANIE"
+        url = "/"
         weight = 2
+
+    [[languages.pl.menu.main]]
+        name = "Projektowanie"
+        url = "/pl/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
+
+    [[languages.pl.menu.main]]
+        name = "Projektowanie mechanizmów kontrolnych I rozwiązań bezpieczeństwa"
+        url = "/pl/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
+
+    [[languages.pl.menu.main]]
+        name = "Secure product"
+        url = "/pl/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
+
+    [[languages.pl.menu.main]]
+        name = "DevelopmentChmura"
+        url = "/pl/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
+
+    [[languages.pl.menu.main]]
+        name = "Segmentacja I separacja Sieci"
+        url = "/pl/services/segmentacja-sieci/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
+
+    [[languages.pl.menu.main]]
+        name = "Security Architect As A Service"
+        url = "/pl/"
+        weight = 2
+        parent = "PROJEKTOWANIE"
 
     [[languages.pl.menu.main]]
         identifier = "Products"
