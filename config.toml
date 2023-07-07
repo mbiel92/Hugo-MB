@@ -135,7 +135,7 @@ news = "/:year/:month/:filename"
         parent = "PLANNING"
 
     [[languages.en.menu.main]]        
-        identifier = "WDRAŻANIE"
+        identifier = "Implementation"
         name = "WDRAŻANIE"
         url = "/en/products/"
         weight = 3
@@ -144,58 +144,58 @@ news = "/:year/:month/:filename"
         name = "Wdrażanie rozwiązań bezpieczeństwa"
         url = "/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Implementation"
             
     [[languages.en.menu.main]]
         name = "Chmura"
         url = "/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Implementation"
             
     [[languages.en.menu.main]]
         name = "Threat Intelligence"
         url = "/services/open-source-intelligence/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Implementation"
             
     [[languages.en.menu.main]]
         name = "Ami"
         url = "/services/ami-system-security/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Implementation"
             
     [[languages.en.menu.main]]
         name = "Fortinet"
         url = "/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Implementation"
             
     [[languages.en.menu.main]]
         name = "Nozomi"
         url = "/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Implementation"
             
     [[languages.en.menu.main]]
         name = "Honeywell"
         url = "/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Implementation"
             
     [[languages.en.menu.main]]
         name = "IBM"
         url = "/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Implementation"
             
     [[languages.en.menu.main]]
         name = "eSecure"
         url = "/services/"
         weight = 3
-        parent = "WDRAŻANIE"
+        parent = "Implementation"
 
     [[languages.en.menu.main]]
-        identifier = "Utrzymanie"
+        identifier = "Maintenance"
         name = "UTRZYMANIE"
         url = "/"
         weight = 4
@@ -204,25 +204,25 @@ news = "/:year/:month/:filename"
         name = "Utrzymanie mechanizmów bezpieczeństwa"
         url = "/services/"
         weight = 4
-        parent = "UTRZYMANIE"
+        parent = "Maintenance"
                     
     [[languages.en.menu.main]]
         name = "Chmura"
         url = "/services/"
         weight = 4
-        parent = "UTRZYMANIE"
+        parent = "Maintenance"
                     
     [[languages.en.menu.main]]
         name = "Zarządzanie bezpieczeństwem środowiska O365"
         url = "/services/"
         weight = 4
-        parent = "UTRZYMANIE"
+        parent = "Maintenance"
                     
     [[languages.en.menu.main]]
         name = "Security Architect As A Service"
         url = "/services/"
         weight = 4
-        parent = "UTRZYMANIE"                  
+        parent = "Maintenance"                  
 
     [[languages.en.menu.main]]
         identifier = "Knowledge"
@@ -471,8 +471,8 @@ news = "/:year/:month/:filename"
         parent = "Links"
 
     [[languages.pl.menu.footer]]
-        identifier = "Linki"
-        name = "LINKS"
+        identifier = "Odnośniki"
+        name = "ODNOŚNIKI"
         url = "/"
         weight = 1
     
@@ -480,34 +480,30 @@ news = "/:year/:month/:filename"
         name = "O NAS"
         url = "/pl/about-us/"
         weight = 1
-        parent = "Links"
+        parent = "Odnośniki"
 
     [[languages.pl.menu.footer]]
-        identifier = "Services"
         name = "USŁUGI"
         url = "/pl/services/"
         weight = 1
-        parent = "Links"
+        parent = "Odnośniki"
 
     [[languages.pl.menu.footer]]
-        identifier = "Events"
         name = "WYDARZENIA"
         url = "/pl/events/"
         weight = 1
-        parent = "Links"
+        parent = "Odnośniki"
 
     [[languages.pl.menu.footer]]
-        identifier = "Blog"
         name = "BLOG"
         url = "/pl/blog/"
         weight = 1
-        parent = "Links"
+        parent = "Odnośniki"
 
     [[languages.pl.menu.footer]]
-        identifier = "Contact"
         name = "KONTAKT"
         url = "/kontakt/"
         weight = 1
-        parent = "Links"
+        parent = "Odnośniki"
 
 
