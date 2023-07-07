@@ -24,7 +24,7 @@
                 {{ if .HasChildren }}
                 <ul>
                     {{ range .Children }}
-                    <li style="display: inline-block;margin-right: 20px;"><a href="#">{{ .Name }}</a></li>
+                    <li style="display: inline-block;margin-right: 20px;"><a href="{{ .Url }}">{{ .Name }}</a></li>
                     {{ end }}
                 </ul>
                 {{end}}
