@@ -33,64 +33,10 @@ news = "/:year/:month/:filename"
     languageCode = 'en-GB'
 
     [[languages.en.menu.main]]
-        identifier = "Assessment"
-        name = "ASSESSMENT"
-        url = "/"
+        identifier = "About"
+        name = "ABOUT"
+        url = "/about-us/"
         weight = 1
-
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
-        
-    [[languages.en.menu.main]]
-        name = "ASSESSMENT"
-        url = "/"
-        weight = 1
-        parent = "Assessment"
 
     [[languages.en.menu.main]]
         identifier = "Services"
@@ -145,66 +91,12 @@ news = "/:year/:month/:filename"
     weight = 1
     languageName = 'Polski'
     languageCode = 'pl'
-        
+    
     [[languages.pl.menu.main]]
-        identifier = "Ocena"
-        name = "OCENA"
-        url = "/"
+        identifier = "About"
+        name = "O NAS"
+        url = "/o-nas/"
         weight = 1
-
-    [[languages.pl.menu.main]]
-        name = "Ocena efektywności stosowanych mechanizmów kontrolnych"
-        url = "/"
-        weight = 1
-        parent = "Ocena"
-
-    [[languages.pl.menu.main]]
-        name = "Audyt OT"
-        url = "/"
-        weight = 1
-        parent = "Ocena"
-        
-    [[languages.pl.menu.main]]
-        name = "CBOM"
-        url = "/"
-        weight = 1
-        parent = "Ocena"
-        
-    [[languages.pl.menu.main]]
-        name = "Testy penetracyjne"
-        url = "/"
-        weight = 1
-        parent = "Ocena"
-        
-    [[languages.pl.menu.main]]
-        name = "Audyt bezpieczeństwa kodu"
-        url = "/"
-        weight = 1
-        parent = "Ocena"
-        
-    [[languages.pl.menu.main]]
-        name = "Red Team"
-        url = "/"
-        weight = 1
-        parent = "Ocena"
-        
-    [[languages.pl.menu.main]]
-        name = "Chmura"
-        url = "/"
-        weight = 1
-        parent = "Ocena"
-        
-    [[languages.pl.menu.main]]
-        name = "Audyt KSC"
-        url = "/"
-        weight = 1
-        parent = "Ocena"
-        
-    [[languages.pl.menu.main]]
-        name = "Urządzenia mobilne"
-        url = "/"
-        weight = 1
-        parent = "Ocena"
 
     [[languages.pl.menu.main]]
         identifier = "Services"
