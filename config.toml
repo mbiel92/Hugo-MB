@@ -46,7 +46,7 @@ news = "/:year/:month/:filename"
 
     [[languages.en.menu.main]]
         name = "OT Audit"
-        url = "/"
+        url = "/services/ot-audit"
         weight = 1
         parent = "Assessment"
         
@@ -82,7 +82,7 @@ news = "/:year/:month/:filename"
         
     [[languages.en.menu.main]]
         name = "KSC Audit"
-        url = "/services/"
+        url = "/services/nis-directive-audit"
         weight = 1
         parent = "Assessment"
         
@@ -256,7 +256,7 @@ news = "/:year/:month/:filename"
         
     [[languages.pl.menu.main]]
         name = "CBOM"
-        url = "/pl/services/"
+        url = "/pl/services/cbom"
         weight = 1
         parent = "Ocena"
         

@@ -1,13 +1,13 @@
 ---
 title: "Cztery kroki do bezpieczeństwa"
 icon: "/img/ci_shield_white.png"
-step1: "OCENA BEZPIECZEŃSTWA"
+step1: "OCENA"
 step1a: "DAJ SIĘ OCENIĆ"
-step2: "PROJEKTOWANIE BEZPIECZNYCH ROZWIĄZAŃ"
+step2: "PROJEKTOWANIE"
 step2a: "PROJEKT DLA CIEBIE"
-step3: "UTRZYMANIE BEZPIECZEŃSTWA"
+step3: "UTRZYMANIE"
 step3a: "POMOŻEMY CI"
-step4: "WDRAŻANIE BEZPIECZEŃSTWA"
+step4: "WDRAŻANIE"
 step4a: "ZROBIMY TO ZA CIEBIE"
 ---
 
